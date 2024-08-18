@@ -9,10 +9,13 @@ import RocketLaunchOutlinedIcon from "@mui/icons-material/RocketLaunchOutlined";
 import LoyaltyOutlinedIcon from "@mui/icons-material/LoyaltyOutlined";
 import LaptopChromebookOutlinedIcon from "@mui/icons-material/LaptopChromebookOutlined";
 import DeviceHubOutlinedIcon from "@mui/icons-material/DeviceHubOutlined";
+import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
+import EmailIcon from '@mui/icons-material/Email';
 
 import Card from "./components/Card";
 import MiniCard from "./components/MiniCard";
 import TestFile from "./components/TestFile";
+import Assignment from "./components/Assignment";
 
 const App = () => {
   return (
@@ -90,6 +93,30 @@ const App = () => {
             />
             <TestFile image={<LaptopChromebookOutlinedIcon />} title="hatdog" />
             <TestFile image={<DeviceHubOutlinedIcon />} title="card number 2" />
+
+
+          </div>
+          <div className="mt-5 grid grid-cols-5 gap-10">
+            <Assignment
+              color="bg-cyan-300"
+              Top_text="Total Invitation"
+              Bottom_text="Total invitation last year were"
+              Bottom_text2="employee"
+              applicants={1025}
+              Big_number={54}
+              image={<PeopleAltIcon/>}
+            />
+
+            {/* <Assignment
+              color="bg-purple-700"
+              Top_text="Total applied"
+              Bottom_text="Total Applied last year were"
+              Bottom_text2="candidate"
+              applicants={780}
+              Big_number={920}
+              image={<PeopleAltIcon/>}
+            /> */}
+            
           </div>
         </div>
       </div>
